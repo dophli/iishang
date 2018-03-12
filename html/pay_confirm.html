@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="js cssanimations">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="pragma" content="no-cache">
+		<!-- 用于定义页面缓存,不缓存页面 -->
+		<meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+		 <!-- 打开新窗口 值为private、no-cache、must-revalidate，那么打开新窗口访问时都会重新访问服务器。 -->
+		<meta name="renderer" content="webkit">
+		<!-- 页面需默认用极速核 -->
+		<meta http-equiv="expires" content="0">
+		<!-- 指定Expires值为一个早已过去的时间，那么访问此网时若重复在地址栏按回车，那么每次都会重复访问 -->
+		<title>确认订单</title>
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,viewport-fit=cover">
+		<meta http-equiv="Cache-Control" content="no-siteapp">
+		<!-- 设置这个之后通过手机百度搜索打开网页时,百度会为你的网页进行转码 -->
+		<link rel="stylesheet" href="../css/amazeui.min.css">
+		<link rel="stylesheet" href="../css/app.min.2.0.css">
+		<link rel="stylesheet" href="../css/redeem.css">
+		<link rel="stylesheet" href="../css/fightgroup.css" type="text/css">
+		<link rel="stylesheet" href="../css/flowerwx.css">
+		<link rel="stylesheet" href="../css/confirm.css">
+		<link rel="stylesheet" href="../css/invitation.css">
+		<link rel="stylesheet" href="../css/cart.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<link href="../css/picker.css" rel="stylesheet">
+		<link href="../css/distpicker.css" rel="stylesheet">
+		<script src="../js/jquery-2.1.3.min.js"></script>
+		
+	</head>
+<body>
+    <div id="app" class="common cart">
+		<div>
+			<header>
+				<div class="am-u-sm-2">
+					<img src="../images/back.png">
+				</div> 
+				<div class="am-u-sm-8 am-pad-none am-text-center" style="float: left;">
+					订单确认页
+				</div>
+			</header> 
+			<div id="group_head_div" class="am-g" style="display: none;">
+				<div class="am-u-sm-12 am-text-center suborderpro">
+					<div class="topjindu_1">
+						<div class="am-u-sm-2 am-pad-none propicsicon">
+							<img src="../images/icon_pro1red.png" width="15">
+						</div> 
+						<div class="am-u-sm-10 am-pad-none protxt" style="color: rgb(254, 84, 120);">
+							选择商品<br>开团
+						</div>
+					</div> 
+					<div class="topjindu_2">
+						<img src="../images/icon_rightblod.png" height="14">
+					</div> 
+					<div class="topjindu_3">
+						<div class="am-u-sm-2 am-pad-none propicsicon">
+							<img src="../images/icon_pro2grey.png" width="15">
+						</div> 
+						<div class="am-u-sm-10 am-pad-none protxt">
+							邀请好友<br>参团
+						</div>
+					</div> 
+					<div class="topjindu_4"><img src="../images/icon_rightblod.png" height="14"></div> 
+					<div class="topjindu_5">
+						<div class="am-u-sm-2 am-pad-none propicsicon"><img src="../images/icon_pro3grey.png" width="15"></div> 
+						<div class="am-u-sm-10 am-pad-none protxt">
+                        人满<br>成团
+						</div>
+					</div> 
+					<br class="clear">
+				</div>
+			</div> 
+			<section>
+			<script src="../js/distpicker.data.js"></script>
+			<script src="../js/distpicker.js"></script>
+			<script src="../js/main.js"></script>
+			<script src="../js/pay_confirm.js"></script>
+				<form class="am-u-sm-12 form-inline" >
+					<div data-toggle="distpicker">
+						<div class="form-group am-u-sm-4">
+							<label class="sr-only" for="province1">Province</label>
+							<select class="form-control" id="province1"></select>
+						</div>
+						<div class="form-group am-u-sm-4">
+							<label class="sr-only" for="city1">City</label>
+							<select class="form-control" id="city1"></select>
+						</div>
+						<div class="form-group am-u-sm-4">
+							<label class="sr-only" for="district1">District</label>
+							<select class="form-control" id="district1"></select>
+						</div>
+						
+					</div>
+					<button class="am-u-sm-2 btn_city1"style="position:absolute;left:20%;bottom:5%">确定</button>
+					<button class="am-u-sm-2 btn_city2" style="position:absolute;right:20%;bottom:5%">取消</button>
+	
+				</form>
+				<form id="orderForm">
+					<div id="user_no_address_div" style="margin-top: -20px;">
+						<img src="../images/address_flag.png" style="width: 23px;"/>
+						<div class="am-u-sm-12 am-pad-none">
+							<div class="am-u-sm-12 wdzhTxgrzl" style="padding-top: 0px;">
+								<div class="am-u-sm-2" style="padding: 7px; vertical-align: middle; color: rgb(0, 0, 0);">收货人</div> 
+								<div class="am-u-sm-10"><input type="text" id="shouhuorenName" placeholder="收货人姓名"></div>
+							</div> 
+							<div class="am-u-sm-12 wdzhTxgrzl">
+								<div class="am-u-sm-2" style="padding: 7px; vertical-align: middle; color: rgb(0, 0, 0);">手机号</div> 
+								<div class="am-u-sm-10">
+									<input type="tel" id="shouhuorenPhone" onkeyup="value=value.replace(/[^\d]/g,&#39;&#39;) " maxlength="11" onbeforepaste="clipboardData.setData(&#39;text&#39;,clipboardData.getData(&#39;text&#39;).replace(/[^\d]/g,&#39;&#39;))" placeholder="请填写11位手机号码">
+								</div>
+							</div> 
+							<div class="am-u-sm-12 wdzhTxgrzl showDistrictSelect">
+								<div class="am-u-sm-2" style="padding: 7px; vertical-align: middle; color: rgb(0, 0, 0);">所在区</div> 
+								<div  class="am-u-sm-9 am-text-right" style="padding: 7px;"><span>请选择</span></div> 
+								<div  class="am-u-sm-1 am-pad-none" style="text-align: right; padding: 7px 10px;">
+									<img src="../images/back.png" style="width: 10px; transform: rotate(180deg);">
+								</div>
+							</div> 
+							<div class="am-u-sm-12 wdzhTxgrzl">
+								<textarea type="text" id="recieverAddress" placeholder="请填写详细地址" style="width: 100%; height: 60px; border: 0px;"></textarea>
+							</div>
+						</div>
+					</div> 
+					<div>
+						<div id="goods_order_1" class="marginTop">
+							<div class="greyBg" style="height: 10px;">&nbsp;</div> 
+							<a style="color: rgb(175, 175, 175);">
+								<div style="width: 23px; height: 4px; background-color: rgb(198, 218, 250); margin-bottom: 10px;"></div>
+								<div id="goods_order_2" class="marginTop">
+									<div class="am-u-sm-3">
+										<img src="../images/0208544d-3c65-4695-824d-8128e5ed9218.jpg" class="cart_img" style="width: 67px; border-radius: 3px;">
+									</div>
+									<div class="am-u-sm-9">
+										<div class="am-u-sm-12 am-pad-none infoname" style="font-size: 15px; margin-top: 5px;">缤纷设计鲜花系列</div> 
+										<div class="am-u-sm-12 am-pad-none infoall" style="font-size: 12px; margin-top: 5px;">已选&nbsp;缤纷设计, 单次体验（1束）</div> 
+										<div class="am-u-sm-12 am-pad-none" style="display: inline-block; font-size: 14px; margin-top: 5px;"><!----> 
+											<div class="am-u-sm-6 am-pad-none infoprice" style="font-size: 15px;">￥59.90&nbsp;x&nbsp;1</div> <!----> <!----> <!---->
+											<div class="am-u-sm-5 am-pad-none carriage" style="font-size: 14px; text-align: right;">运费：<span>免运费</span></div>
+										</div>
+									</div>
+								</div> <!---->
+							</a> <!----> 
+							<div class="am-u-sm-12 ddqrMainDiv">
+								<div>
+									<div class="am-u-sm-4 am-pad-none font15 margt3 sdrqsjRqDiv" style="margin-top: 5px;">
+                                    首次送达日期
+									</div> 
+									<div class="am-u-sm-6 sdrqsjRqDiv">
+										<input type="text" placeholder="请选择送达日期"  class="am-form-field my-data-picker" style="background-color: rgb(255, 255, 255);">
+									</div> 
+									<div class="am-u-sm-2 sdrqsjRqDiv"></div>
+								</div>
+							</div> 
+							<br style="clear: both;"> 
+						</div> <!----> <!---->
+					</div> 
+					<div class="greyBg" style="height: 10px;">&nbsp;</div>
+					<div id="zsradioshow" class="am-u-sm-12">
+						<div class="am-u-sm-12 am-pad-none">
+							<div class="am-u-sm-4 am-pad-none" style="margin-top: 15px; color: rgb(0, 0, 0);">
+                           订购人信息
+							</div> 
+							<div class="am-u-sm-8 ddqrJfdkCheck" style="margin-top: 5px;">
+								<input type="checkbox" id="samephone"  style="display: inline-block;">
+								与收货人手机号一致
+							</div>
+						</div>
+						<div class="am-u-sm-12" style="margin-top: 10px; padding: 0px;">
+							<div class="am-u-sm-2 am-pad-none" style="color: rgb(0, 0, 0); text-align: left; margin-top: 3px; margin-bottom: 8px;">手机号</div> 
+							<div class="am-u-sm-10 am-pad-none" style="padding-right: 50px;">
+								<input type="tel" id="orderPhone" placeholder="请输入11位手机号" class="grayborderinput">
+							</div>
+						</div> 
+						<div class="am-u-sm-12 am-pad-none" style="margin-bottom: 15px;">
+							注：以便配送中出现问题可以通知到您。
+						</div>
+					</div> 
+					<div id="goods_order_discount">
+						<div id="goods_order_discount_coupon">
+							<div id="use_coupon" class="am-u-sm-12 ddqrMainDiv">
+								<div class="am-u-sm-12 am-pad-none am-margin-top-xs">
+									<div class="am-u-sm-10 am-pad-none" style="color: rgb(0, 0, 0); font-size: 15px;">使用优惠券
+										<div id="coupon_count_can_use" class="kyzhangshu">
+											<div class="tringle_left"></div> 
+											<div class="tringle_left_w"></div>
+											0张可用
+										</div>
+									</div> 
+									<div class="am-u-sm-2 am-pad-none am-text-right">
+										<i class="am-icon-angle-right am-icon-sm" style="color: rgb(137, 137, 137);"></i>
+									</div>
+								</div> <!---->
+							</div> <!----> <!----> <!----> 
+							<input type="hidden" id="couponCode">
+						</div> <!----> 
+						<div>
+							<div id="sfly" class="am-u-sm-12 ddqrMainDiv">
+								<div class="am-u-sm-6 am-pad-none font15 margt2">买家留言</div> 
+								<div class="am-u-sm-6 am-pad-none am-text-right">
+									<input type="checkbox" id="lycheckbox" class="foamCheckbox"> <label for="lycheckbox"></label>
+								</div> <!---->
+								<div class="am-u-sm-12 am-pad-none margt2">
+									<textarea style="display:none" type="text" id="userNotes" name="order.buyerMessage" value="" placeholder="50字内，请输入与客服协商一致的信息，不要填写禁忌花材、贺卡内容和收货时间" class="qrddLyinput" style="border: 1px solid rgb(242, 242, 242); padding: 10px; height: 100px;"></textarea>
+								</div>
+							</div>
+						</div> 
+						<div>
+							<div id="jfdk" class="am-u-sm-12 ddqrMainDiv">
+								<div class="am-u-sm-12 am-pad-none">
+									<div class="am-u-sm-10 am-pad-none font15" style="margin-top: 10px;">积分抵扣&nbsp;&nbsp;
+										<span style="color: lightgrey; font-size: 12px;">当前有0积分,满100积分可用</span>
+									</div> 
+									<div class="am-u-sm-2 ddqrJfdkCheck">
+										<input disabled="disabled" type="checkbox" id="jfcheckbox" class="foamCheckbox"> 
+										<label for="jfcheckbox"></label>
+									</div> <!---->
+								</div>
+							</div>
+						</div> 
+						
+					</div>
+				</form>
+			</section> 
+			<div class="am-g gdDbdiv padding10"></div> 
+			<div id="btm_pay_div" class="footeNavbar" style="width: 640px; left: 50%; margin-left: -320px;">
+				<div class="am-u-sm-12 am-pad-none">
+					<div class="am-u-sm-5 am-text-left am-pad-none no_wrap" style="padding-right: 10px; padding-left: 10px;">
+						<span style="text-align: right;">合计 
+							<span class="ddqrDbMoney">￥
+								<span id="totalPay" style="font-size: 18px;">59.90</span>
+							</span>
+						</span>
+					</div> 
+					<div class="am-u-sm-3 am-text-left no_wrap" style="padding-right: 0px;">
+						<span>运费 
+							<span>￥
+								<span id="feightTotal">0.00</span>
+							</span>
+						</span>
+					</div> 
+					<button id="pay_btn_id" class="am-u-sm-4 footerGmDiv">去支付</button>
+				</div> <!---->
+			</div> <!----> <!----> 
+			<div id="foamZcc"></div> 
+			<div id="zzzfz">订单生成中。。。。</div>
+		</div> <!----> <!----> <!----> <!----> <!----> <!----></div>
+		
+		<div class="am-u-sm-12 foamModal clr5 tip_info_dlg" >
+			<div class="am-u-sm-12 foamModalHead am-text-center">提示</div> 
+			<div class="am-u-sm-12 foamModalInput am-text-center">
+				<span id="tip_info">请填写收货人 </span> 
+			</div> <!----> 
+			<a href="javascript:" class="am-u-sm-12 foamModalBtn closeBtn clr5" style="border-radius: 0px 0px 15px 15px; color: rgb(85, 85, 85);">关闭
+			</a>
+		</div>
+		<!--遮罩层-->
+		<div class="foamZcc"></div>
+	</body>
+</html>

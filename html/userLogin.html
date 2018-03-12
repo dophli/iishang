@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <title>爱尚鲜花 - 账号密码登录</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="Cache-Control" content="no-siteapp"/>
+	<!-- 通过手机百度搜索打开网页时,百度会为你的网页进行转码 -->
+	<link rel="stylesheet" href="../css/amazeui.min.css">
+	<link rel="stylesheet" href="../css/app.min.2.0.css">
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/myjs.js"></script>
+    <link rel="stylesheet" href="../css/flowerapp.css">
+   
+  
+</head>
+<body>
+<form id="form1" method="post" action="/">
+    <div class="am-g">
+	<!-- 包裹列 -->
+        <div class=" am-text-center login_logo">
+            <img src="../images/logo_new.png" width="90"/>
+            <div class="logo_text">让喜欢成为习惯&nbsp;&nbsp;爱尚<sup>&reg;</sup>订阅鲜花</div>
+        </div>
+        <div class="am-u-sm-12 registlogin_div">
+            <form class="regist" action="">
+                <div class="am-u-sm-12 am-pad-none reg_telpswyzm">
+                    <div class="am-u-sm-2">
+                        <img src="../images/icon_tel.png" width="16"/>
+                    </div>
+                    <div class="am-u-sm-10 am-pad-none">
+                        <input type="text" id="phone"  placeholder="手机号" maxlength="20"/>
+                    </div>
+                </div>
+                <div class="am-u-sm-12 am-pad-none reg_telpswyzm">
+                    <div class="am-u-sm-2">
+                        <img src="../images/icon_psw.png" width="16"/>
+                    </div>
+                    <div class="am-u-sm-10 am-pad-none">
+                        <input type="password" id="pwd" value="" placeholder="账号密码" maxlength="16"/>
+                    </div>
+                    <span class="posi_eye"><img class="posi_eye_img" src="../images/icon_psweye.png" width="18"/></span>
+                </div>
+
+                <div class="am-u-sm-12 am-pad-none">
+                    <div class="am-u-sm-1">&nbsp;</div>
+                    <div class="am-u-sm-5">
+                        <button type="button" id="btn_pwd_login" class="am-btn-block reglogbtn">登录</button>
+                    </div>
+                    <div class="am-u-sm-5">
+                        <button type="button" onclick="toRegist();" class="am-btn-block reglogbtn">注册</button>
+                    </div>
+                    <div class="am-u-sm-1">&nbsp;</div>
+                </div>
+                <div class="am-u-sm-12 am-pad-none reglog_tips">
+                    <div class="am-u-sm-6">
+                        <a href="javascript:;" onclick="toYzmLogin();">短信快捷登录</a>
+						<!-- javascript: 是一个伪协议,表示在触发<a>默认动作时，执行一段JavaScript代码，而 javascript:; 表示什么都不执行，这样点击<a>时就没有任何反应。 -->
+                    </div>
+                    <div class="am-u-sm-6 am-text-right">
+                        <a href="javascript:;" onclick="toChangePwd();">重置密码</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</form>
+<div class="am-u-sm-12 foamModal" id="dlg_tip_info">
+    <div class="am-u-sm-12 foamModalHead">提示 <img src="../images/cha_red.png" width="15" class="foamModalHide hiddenTipInfo"  /></div>
+    <div class="am-u-sm-12 foamModalInput">
+        <span id="tip_info"></span>
+    </div>
+    <a href="javascript:"  class="am-u-sm-12 foamModalBtn qdBtn hiddenTipInfo" style="border-radius:0 0 15px 15px;">
+        确定
+    </a>
+</div>
+<!--遮罩层-->
+<div class="foamZcc"></div>
+</body>
+</html>

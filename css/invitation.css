@@ -1,0 +1,155 @@
+[data-am-widget=tabs] {
+    margin: 0;
+}
+
+.am-tabs-bd {
+    border: none;
+    margin-top: 2px;
+}
+
+.am-tabs-default .am-tabs-nav a {
+    color: #e0e0e0;
+    line-height: 42px;
+    background-color: #fe5478;
+    font-size: 15px;
+}
+
+.am-tabs-default .am-cf > .am-active a {
+    background-color: #fe5478;
+    color: #fff;
+}
+
+.yqkerweima {
+    position: absolute;
+    right: 11%;
+    bottom: 26%;
+    width: 80px;
+    height: 80px;
+}
+
+.duihuanbtn {
+    background-color: #fe5478;
+    color: #fff;
+    font-size: 13px;
+    display: inline-block;
+    padding: 4px 15px;
+    border-radius: 50px;
+}
+
+.menu_invitation {
+    height: 41px;
+    background-color: #fff !important;
+    color: #999 !important;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.detail {
+    padding: 0px 15px;
+    font-size: 16px;
+    color: black;
+}
+
+.avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    z-index: 100;
+    position: relative;
+    margin-top: 10px;
+}
+
+.row{
+    margin-top: 15px;
+    padding: 0 15px 0 40px;
+}
+
+.invitee{
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #f2f2f2;
+    margin-top: 15px;
+    font-size: 13px;
+    color:#666;
+    position:relative;
+    padding: 11px 43px 11px;
+}
+.invitee .avatar{
+    position: absolute;
+    left: -30px;
+}
+.invite_title{
+    font-size: 15px;
+    color: #000;
+    border-bottom: 1px solid #f2f2f2;
+    margin-right: 20px;
+    line-height: 30px;
+}
+.invite_name{
+    margin-top: 8px;
+    font-weight: 500;
+}
+.invite_status{
+    position: absolute;
+    right:0;
+    top:10px;
+}
+.invite_status img{
+    width: 80px;
+}
+.redeem_row{
+    background-color: #fff;
+    padding: 0px 15px 16px 15px;
+    border: 1px solid #f2f2f2;
+    border-radius: 10px;
+    margin-top: 15px;
+    /*margin: 10px 15px 0px 15px;*/
+}
+.duihuan{
+    border: 1px solid #fe5478;
+    padding: 5px;
+    float: right;
+    text-align: center;
+    border-radius: 20px;
+    top: 28px;
+    color: #fe5478;
+}
+
+.duihuan_grey{
+    border: 1px solid #DDD;
+    padding: 5px;
+    float: right;
+    text-align: center;
+    border-radius: 20px;
+    top: 28px;
+    color: #DDD;
+}
+
+
+.am-tabs-d2 .am-tabs-nav a{
+    line-height: 35px;
+}
+
+.am-tabs-d2 .am-tabs-nav>.am-active a{
+    font-weight: 400 !important;
+    line-height: 35px;
+}
+
+.am-tabs-d2 .am-tabs-nav>.am-active:after{
+    position: absolute;
+    height: 0;
+    bottom: 5px;
+    left: 42%;
+    margin-left: -5px;
+    border: 1px solid #999;
+    width: 30px;
+    content: "";
+    z-index: 1;
+}
+.am-tabs-d2 .am-tabs-nav>.am-active{
+    border-bottom: 2px solid #f2f2f2;
+}
+
+.am-tabs-nav .active a{
+    color: #555 !important;
+}

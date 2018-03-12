@@ -1,0 +1,24 @@
+.form-inline{
+	width:480px;
+	height:230px;
+	margin: auto;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index:100000;
+	display:none;
+	background:#fff;
+}
+.foamModal{
+	margin: auto;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	height:150px;
+	display: none; 
+	z-index: 100007;
+}

@@ -1,0 +1,20 @@
+/* ---------- Captcha ---------- */
+input.captcha {
+    ime-mode: disabled;
+    text-transform: uppercase;
+}
+
+img.captcha-image {
+    cursor: pointer;
+    position:absolute;
+    right:0px;
+    top:-7px;
+    color:#fff;
+    display:inline-block;
+    /*padding:4px 8px;*/
+    margin-bottom: 5px;
+    font-size:14px;
+    border-radius:4px;
+    width:86px;
+    text-align:center;
+}

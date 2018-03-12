@@ -1,0 +1,140 @@
+/* Write your styles */
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+	cursor:pointer;
+}
+body{
+	min-width:320px;
+	overflow-x:hidden;
+	color:#555;
+	font-size:15px;
+	font-family:"黑体",Arial, Helvetica, sans-serif;
+}
+ul, li, i {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+.clear{
+	clear:both;
+}
+.am-pad-none{
+	padding-left:0;
+	padding-right:0;	
+}
+.am-padl-none{
+	padding-left:0;	
+}
+.am-padr-none{
+	padding-right:0;	
+}
+
+/*手机密码登录*/
+.login_logo{
+	margin:40px 0;	
+}
+.logo_text{
+	margin-top:10px;
+	color:#fe5478;
+	font-size:16px;	
+}
+.reg_telpswyzm{
+	margin-bottom:10px;	
+	border-bottom:1px solid #f2f2f2;
+	padding:8px 0;
+	position:relative;
+}
+.reg_telpswyzm input{
+	width:100%;
+	padding:5px;
+	font-size:14px;
+	border:0;	
+	outline:none;
+}
+.posi_eye{
+	position:absolute;
+	right:20px;
+	top:10px;
+}
+.get_yzm{
+	position:absolute;
+	right:0px;
+	top:5px;
+	background-color:#fe5478;
+	color:#fff;
+	display:inline-block;
+	padding:4px 8px;
+	font-size:14px;
+	border-radius:4px;	
+	width:86px;
+	text-align:center;
+}
+.get_yzmClearColor{
+    position:absolute;
+    right:0px;
+    top:5px;
+    color:#fff;
+    display:inline-block;
+    padding:4px 8px;
+    font-size:14px;
+    border-radius:4px;
+    width:86px;
+    text-align:center;
+}
+.reglogbtn{
+	padding:10px 0;
+	font-size:15px;
+	border-radius:3px;
+	background-color:#fe5478;
+	border:1px solid #fe5478;
+	color:#fff;	
+	margin-top:10px;
+}
+
+.disabled-btn{
+	padding:10px 0;
+	font-size:15px;
+	border-radius:3px;
+	background-color:lightgrey;
+	border:1px solid lightgrey;
+	color:#fff;
+	margin-top:10px;
+}
+
+.reglog_tips{
+	margin-top:5px;	
+}
+.reglog_tips > div > a{
+	font-size:13px;
+	color:#a8a8a8;	
+}
+.fixed_btm{
+	position:fixed;
+	bottom:5px;
+	width:100%;
+	text-align:center;
+	font-size:13px;
+	color:#010101;	
+}
+.msgs1{
+	background-color:#eee;	
+}
+.a_tipcolor{
+	color:#fe5478;
+	padding-bottom:1px;
+	border-bottom:1px solid #fe5478;
+}
+.pad_btm1{
+	padding-bottom:1px;
+	display:inline-block;	
+}
+.tiaok_txt{
+	color:#777;
+	font-size:14px;
+	text-indent:2em;
+	padding:10px;	
+}
